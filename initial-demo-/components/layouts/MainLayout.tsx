@@ -5,12 +5,17 @@ import { Navbar } from '../Navbar';
 
 import styles from './MainLayout.module.css';
 
-export const MainLayout: FC = ({ children }) => {
+type PropsWithChildren = {
+  children: React.ReactNode;
+}
+
+
+export const MainLayout: FC<PropsWithChildren> = ({ children }) => {
     return (
         <div className={styles.container}>
           
           <Head>
-            <title>Home - Fernando</title>
+            <title>Home - James</title>
             <meta name="description" content="Home Page" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
